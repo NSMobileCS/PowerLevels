@@ -1,0 +1,20 @@
+<hr><hr>
+<form (submit)="updatePowLev()">
+  <label>
+    Power level
+    <input type='number' name='powerlevel' [(ngModel)]="newPowerLevel" min='1' max='100'>
+  </label>
+  <input type='submit' value='calculate power levels!'>
+</form>
+<hr><hr>
+<app-human-component [powerlevel]='currentPowerLevel' [powermessage]='getLevelMessage(1)'></app-human-component>
+<hr>
+<app-sayan-component [powerlevel]='currentPowerLevel * 10' [powermessage]='getLevelMessage(10)'></app-sayan-component>
+<hr>
+<app-super-sayan-component [powerlevel]='currentPowerLevel * 90'  [powermessage]='getLevelMessage(90)'></app-super-sayan-component>
+<hr>
+<app-super-sayan-two-component [powerlevel]='currentPowerLevel * 150'  [powermessage]='getLevelMessage(150)'></app-super-sayan-two-component>
+<hr>
+<app-super-sayan-three-component [powerlevel]='currentPowerLevel * 250'  [powermessage]='getLevelMessage(250)'></app-super-sayan-three-component>
+<hr>
+<app-super-sayan-four-component [powerlevel]='currentPowerLevel * 500'  [powermessage]='getLevelMessage(500)'></app-super-sayan-four-component>
