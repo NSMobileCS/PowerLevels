@@ -9,6 +9,7 @@ export class HumanComponentComponent implements OnInit {
 
   @Input() powerlevel;
   @Input() powermessage;
+  
   constructor() { }
 
   ngOnInit() {

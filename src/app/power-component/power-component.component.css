@@ -1,0 +1,19 @@
+fieldset {
+    display: inline-block;
+    width: 180px;
+    margin: 8px;
+    padding: 8px;
+    background-color: orange;
+    vertical-align: top;
+    border-radius: 3px;
+}
+
+
+.hilight {
+    font-size: 1.5em;
+    /* color: #ffaa11; */
+    color: white;
+    background-color: #2a2a2a;
+    border: 2px double black;
+    border-radius: 3px;
+}

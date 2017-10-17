@@ -15,7 +15,7 @@ export class PowerComponentComponent implements OnInit {
         {score: 50000, messageString:"The One!"}
   ];
 
-  getLevelMessage = (sayanMultiplier) => { 
+  getLevelMessage = (sayanMultiplier) => {
                     var powerlevel = this.currentPowerLevel * sayanMultiplier;
                     var message = '';
                     for (let level of this.powerLevels){

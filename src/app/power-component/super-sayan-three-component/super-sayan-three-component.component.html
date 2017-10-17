@@ -4,6 +4,7 @@
 <p>
     power level: {{ powerlevel }}
 </p>
-<p>
-  {{ powermessage }}
-</p>
+<div *ngIf="powermessage">
+    <hr>
+    {{ powermessage }}
+</div>
